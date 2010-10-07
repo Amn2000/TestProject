@@ -1,0 +1,56 @@
+<html>
+<head>
+</head>
+<body>
+    This package contains the code base for the third design pattern lab.
+
+    <h2>Introduction</h2>
+    <p>Search for <code>// YOUR CODE HERE</code> in the skeleton.</p>
+
+    <p>In this laboration you will make the graphics of a snake game
+    flexible by using structural design patterns. The game will be
+    extended with graphical modules that you will make usable. In the
+    beginning of every section you must write a short text (2-5
+    sentences) explaining your choice of design pattern. Ask the lab
+    assistant if you can not find a design pattern that fits. The
+    graphical modules are constructed so that it will take some
+    thinking to make them usable in the game.</p>
+
+    <h2>Usage</h2> <p> The snake can either be controlled by the arrow
+    keys on the keyboard or by an automatic demo controller. There are
+    also several possible graphical modules to use for displaying the
+    snake, background, and bonuses. </p>
+
+
+    <h2>Purpose</h2> <p> The purpose is to learn how to code with
+    structural patterns and choose from a pattern dictionary the
+    pattern most suited in a given situation.</p>
+
+    <h2>Readings</h2> <p> The chapters on structural design patterns in
+    GoF p. 137-217.</p>
+
+    <h2>Assignments</h2> <p> First, make the ControllerKey usable. Edit in
+    <code>Snake.java, setKeyControll</code>.</p>
+
+    <p> Second, <code>Renderer</code> is a common interface of all
+    Graphics modules. <code>Graphics3D</code> has totally different
+    method names than the <code>Renderer</code> interface. Therefore
+    it needs to be <em>adapted</em> (hint intended).</p>
+
+    <p> Third, <code>ModuleA, ModuleB,</code> and <code>ModuleC</code>
+    have the functionality for displaying a background, snake, and
+    bonus, but they have totally different interfaces than the
+    <code>Renderer</code>. Moreover, each module does one thing, but
+    you need one object that can do all three things. Hint:
+    Fa&ccedil;ade?</p>
+
+    <p> Fourth, <em>decorate</em> (subtle hint!) a renderer such that
+    you can display the shadow of the snake and of the bonus. The
+    shadow applies to the current renderer, regardless if it is the
+    original, the 3D, or the ABC.</p>
+
+    <h2>Hand in</h2> <p> Hand in all classes (.java-files only) that
+    you have created or modified.</p>
+
+</body>
+</html>
